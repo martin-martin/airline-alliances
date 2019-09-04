@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All Airline Alliance Member Airlines</h1>
+    {% for alliance, members in all_members.items() %}
+        <h2>{{ alliance }}</h2>
+        <ul>
+            {% for member in members %}
+            <li>{{ member }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
